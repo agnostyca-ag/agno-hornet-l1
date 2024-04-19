@@ -102,16 +102,17 @@ func databaseAnalyze(args []string) error {
 		}
 
 		if chainOutput, isChainOutput := output.Output().(iotago.ChainConstrainedOutput); isChainOutput {
+			if immutableAlias := unlocks.ImmutableAlias(); immutableAlias != nil {
+				fmt.Println(">", "immutableAlias:", immutableAlias.Address.Bech32(protoParams.Bech32HRP))
+			}
+
 			immFeatures := chainOutput.ImmutableFeatureSet()
 			if len(immFeatures) > 0 {
-				if immutableAlias := unlocks.ImmutableAlias(); immutableAlias != nil {
-					fmt.Println(">", "immutableAlias:", immutableAlias.Address.Bech32(protoParams.Bech32HRP))
-				}
-				if issuer := features.IssuerFeature(); issuer != nil {
+				if issuer := immFeatures.IssuerFeature(); issuer != nil {
 					fmt.Println(">", "issuer:", issuer.Address.Bech32(protoParams.Bech32HRP))
 				}
-				if metadata := features.MetadataFeature(); metadata != nil {
-					fmt.Println(">", "metadata:", hexutil.Encode(metadata.Data))
+				if metadata := immFeatures.MetadataFeature(); metadata != nil {
+					fmt.Println(">", "metadata:", string(metadata.Data))
 				}
 			}
 		}
