@@ -25,15 +25,15 @@
   },
   "node": {
     "profile": "auto",
-    "alias": "HORNET node"
+    "alias": "SuperAGNO Node"
   },
   "protocol": {
-    "targetNetworkName": "iota-mainnet",
+    "targetNetworkName": "agno-mainnet",
     "milestonePublicKeyCount": 7,
     "baseToken": {
-      "name": "IOTA",
-      "tickerSymbol": "IOTA",
-      "unit": "IOTA",
+      "name": "AGNO",
+      "tickerSymbol": "AGNO",
+      "unit": "AGNO",
       "subunit": "micro",
       "decimals": 6,
       "useMetricPrefix": false

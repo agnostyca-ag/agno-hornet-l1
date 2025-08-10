@@ -4,16 +4,16 @@
     "stopGracePeriod": "5m"
   },
   "node": {
-    "alias": "HORNET private-tangle node"
+    "alias": "SuperAGNO private-tangle node"
   },
   "protocol": {
-    "targetNetworkName": "private_tangle1",
+    "targetNetworkName": "agno-private-tangle",
     "milestonePublicKeyCount": 2,
     "baseToken": {
-      "name": "TestCoin",
-      "tickerSymbol": "TEST",
-      "unit": "TEST",
-      "subunit": "testies",
+      "name": "AGNO",
+      "tickerSymbol": "AGNO",
+      "unit": "AGNO",
+      "subunit": "agno",
       "decimals": 6,
       "useMetricPrefix": false
     },

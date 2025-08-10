@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "networkName": "private_tangle1",
-  "bech32HRP": "tst",
+  "networkName": "agno-private-tangle",
+  "bech32HRP": "agno",
   "minPoWScore": 0,
   "belowMaxDepth": 15,
   "rentStructure": {

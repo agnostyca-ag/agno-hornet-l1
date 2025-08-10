@@ -20,11 +20,11 @@ type ConfigPublicKeyRanges []*ConfigPublicKeyRange
 
 type BaseToken struct {
 	// the base token name
-	Name string `default:"IOTA" usage:"the base token name" json:"name"`
+	Name string `default:"AGNO" usage:"the base token name" json:"name"`
 	// the base token ticker symbol
-	TickerSymbol string `default:"IOTA" usage:"the base token ticker symbol" json:"tickerSymbol"`
+	TickerSymbol string `default:"AGNO" usage:"the base token ticker symbol" json:"tickerSymbol"`
 	// the base token unit
-	Unit string `default:"IOTA" usage:"the base token unit" json:"unit"`
+	Unit string `default:"AGNO" usage:"the base token unit" json:"unit"`
 	// the base token subunit
 	Subunit string `default:"micro" usage:"the base token subunit" json:"subunit,omitempty"`
 	// the base token amount of decimals
@@ -36,7 +36,7 @@ type BaseToken struct {
 // ParametersProtocol contains the definition of the parameters used by protocol.
 type ParametersProtocol struct {
 	// the initial network name on which this node operates on.
-	TargetNetworkName string `default:"iota-mainnet" usage:"the initial network name on which this node operates on"`
+	TargetNetworkName string `default:"agno-mainnet" usage:"the initial network name on which this node operates on"`
 	// the amount of public keys in a milestone.
 	MilestonePublicKeyCount int `default:"7" usage:"the amount of public keys in a milestone"`
 	// the ed25519 public key of the coordinator in hex representation.
