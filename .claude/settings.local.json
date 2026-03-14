@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go:*)",
+      "Bash(brew install:*)",
+      "Bash(docker:*)",
+      "Bash(./scripts/build_hornet.sh:*)",
+      "Bash(./hornet:*)",
+      "Bash(curl:*)",
+      "Bash(sh:*)",
+      "Bash(open:*)",
+      "Bash(./bootstrap.sh:*)",
+      "Bash(./run.sh)",
+      "Bash(git push:*)",
+      "Bash(gh repo fork:*)",
+      "Bash(git clone:*)"
+    ],
+    "deny": []
+  }
+}
